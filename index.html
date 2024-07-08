@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes de Medicina UVM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Estudiantes de Medicina UVM</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#temario">Temario</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#casos-clinicos">Casos Clínicos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="temario">
+            <h2>Temario</h2>
+            <div class="temario-content">
+                <div class="temario-item">
+                    <h3>Ginecología y Obstetricia</h3>
+                    <p>Contenido detallado sobre temas de ginecología y obstetricia.</p>
+                </div>
+                <div class="temario-item">
+                    <h3>Pediatría</h3>
+                    <p>Contenido detallado sobre temas de pediatría.</p>
+                </div>
+                <div class="temario-item">
+                    <h3>Cirugía</h3>
+                    <p>Contenido detallado sobre temas de cirugía.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz</h2>
+            <p>Pon a prueba tus conocimientos con nuestros quizzes interactivos.</p>
+            <button onclick="startQuiz()">Iniciar Quiz</button>
+        </section>
+
+        <section id="casos-clinicos">
+            <h2>Casos Clínicos</h2>
+            <p>Estudia y analiza diferentes casos clínicos reales.</p>
+            <button onclick="showCaseStudies()">Ver Casos Clínicos</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Estudiantes de Medicina UVM</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        start();
+    </script>
+</body>
+</html>
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send</button>
+    </form>
+</section>
